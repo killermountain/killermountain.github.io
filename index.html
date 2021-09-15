@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function LoadVideo()
+	{
+		var id =  document.getElementById("Id").value;
+		//alert(id);
+		var frame = '<iframe src="https://hofoot.90minkora.com/embed/'+id+'?autoplay=1&amp;htmlplayer=1" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="100%" height="350px" frameborder="0"></iframe>';
+		
+		document.getElementById("iframe").innerHTML = frame;
+	}
+</script>
+<body>
+	<div>
+		<input type="text" id="Id">
+		<button onclick="LoadVideo()">Load</button>
+	</div>
+	<br><br><hr>
+	<div id='iframe'>
+		
+	</div>
+
+	<!-- <div>
+		<iframe src="https://hofoot.90minkora.com/embed/3rJs3wwZeKhMk?autoplay=1&amp;htmlplayer=1" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
+	</div> -->
+</body>
+</html>
